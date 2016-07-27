@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  table
+    thead
+      tr
+        th Key
+        th Full Name
+        th Address1
+        th Address2
+    tbody
+      each employee in employees
+        tr
+          td= employee.key
+          td
+            a(href="/employee/" + employee.key)= employee.first+employee.last
+          td= employee.first+employee.last
+          td= employee.address1
+          td= employee.address2
+
