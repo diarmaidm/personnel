@@ -17,3 +17,5 @@ function getEmployees () {
   ];
   return employees;
 }
+
+module.exports = getEmployees;
