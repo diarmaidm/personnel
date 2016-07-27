@@ -1,0 +1,8 @@
+---
+applications:
+- name: personnel
+  memory: 64M
+  env:
+    NODE_ENV: development
+  instances: 1
+  command: node ./bin/www
